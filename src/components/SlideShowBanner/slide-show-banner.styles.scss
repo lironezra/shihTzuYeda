@@ -1,0 +1,49 @@
+.section-slide-show {
+    width: 100%;      
+
+    .banner-wrapper {
+        position: relative;
+        height: 530px;
+        width: 100%;
+
+        img {
+            position: absolute;
+            height: 400px;
+            width: auto;
+            margin: 0;
+            top: 50%;   
+            left: 2%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            h1 {
+                font-size: 50px;
+                line-height: 80px;
+                color: white;
+            }
+        }
+    }
+
+    .banner-wrapper1 {
+        position: relative;
+        height: 530px;
+        width: 100%;
+        background: red;
+    }
+
+
+        
+    
+    
+
+}
+
