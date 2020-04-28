@@ -4,9 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import GoTop from './components/Shared/go-top.component';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <GoTop />
   </React.StrictMode>,
   document.getElementById('root')
 );
