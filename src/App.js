@@ -1,10 +1,11 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import { Preloader, Placeholder } from 'react-preloading-screen';
 
+import HomePage from './pages/Home/home.component';
+import AboutUsPage from './pages/AboutUs/about-us.component';
+
 import Header from './components/Header/header.component';
-import SlideShowBanner from './components/SlideShowBanner/slide-show-banner.component';
-import Features from './components/Features/features.component';
-import PhotoGallery from './components/PhotoGallery/photo-gallery.component';
 import Footer from './components/Footer/footer.component';
 import Spinner from './components/Shared/Spinner/spinner.component';
 
@@ -16,9 +17,13 @@ function App() {
     <Preloader>
       <div className="App">
         <Header />
-        <SlideShowBanner />
-        <Features />
-        <PhotoGallery />
+
+        <Switch>
+          <Route exact path='/' component={HomePage}/>
+          <Route path='/about-us' component={AboutUsPage}/>
+        </Switch>
+
+        {/* <HomePage /> */}
         <Footer />
       </div>
 

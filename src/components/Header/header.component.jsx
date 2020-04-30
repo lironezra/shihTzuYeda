@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import AppLogo from '../../assets/images/app-logo.png';
 import UserLogo from '../../assets/icons/user.png';
@@ -20,10 +21,15 @@ const Header = () => {
                 <nav>
                     <div className="nav-content">
                         <ul>
-                            <li>בית</li>
-                            <li>קצת עלינו</li>
+                            <li>
+                                <Link to="/" className="home-link">בית</Link>
+                            </li>
+                            <li>
+                                <Link to="/about-us" className="about-us-link">קצת עלינו</Link>
+                            </li>
                             <li className="dropdown">
-                                <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">המלצות</a>
+                                <Link to="/recomendations">המלצות</Link>
+                                {/* <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">המלצות</a> */}
                                 {/* <button class="dropbtn">Dropdown</button> */}
                                 <div className="dropdown-content">
                                     <a className="link" href="https://www.w3schools.com/howto/howto_css_dropdown.asp">ספרים מומלצים</a>
