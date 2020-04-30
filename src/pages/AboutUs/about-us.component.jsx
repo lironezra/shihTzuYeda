@@ -1,10 +1,17 @@
 import React from 'react';
 
 import ImageBanner from '../../components/Shared/ImageBanner/image-banner.component';
-import ShihtzuBannerPhoto from '../../assets/images/shihtzu-running.jpg';
+import Card from '../../components/Card/card.component';
 import userLogo from '../../assets/icons/user-profile-icon-6.jpg';
 
 import './about-us.styles.scss';
+import ShihtzuBannerPhoto from '../../assets/images/shihtzu-running.jpg';
+
+const TEAM_MANAGERS = [
+    {fullName: "מירי וויזנברג", jobTitle: "מנהלת הקבוצה"},
+    {fullName: "מיכל כהן", jobTitle: "סגנית מנהלת"},
+    {fullName: "אירנה מקרנקו", jobTitle: "סגנית מנהלת"}
+];
 
 const AboutUsPage = () => {
     return (
@@ -32,33 +39,13 @@ const AboutUsPage = () => {
             <section className="team-managers-section">
                 <h1>מנהלות הקבוצה</h1>
                 <div className="manager-cards">
-                    <div className="card">
-                        <div className="profile-img">
-                            <img src={userLogo} alt="" />
-                        </div>
-                        <div className="card-description">
-                            <h3>מירי וויזנברג</h3>
-                            <p>מנהלת הקבוצה</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="profile-img">
-                            <img src={userLogo} alt="" />
-                        </div>
-                        <div className="card-description">
-                            <h3>מיכל כהן</h3>
-                            <p>סגנית מנהלת</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="profile-img">
-                            <img src={userLogo} alt="" />
-                        </div>
-                        <div className="card-description">
-                            <h3>אירנה מקרנקו</h3>
-                            <p>סגנית מנהלת</p>
-                        </div>
-                    </div>
+                    {
+                        TEAM_MANAGERS.map((m, i) => <Card 
+                                                        key={i} 
+                                                        cardName={m.fullName} 
+                                                        cardDesc={m.jobTitle} 
+                                                        image={userLogo}/>)
+                    }
                 </div>
             </section>
         </>
