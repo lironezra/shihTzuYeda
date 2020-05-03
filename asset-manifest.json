@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/shihTzuYeda/static/css/main.92fc52e5.chunk.css",
-    "main.js": "/shihTzuYeda/static/js/main.8e7d093c.chunk.js",
-    "main.js.map": "/shihTzuYeda/static/js/main.8e7d093c.chunk.js.map",
+    "main.css": "/shihTzuYeda/static/css/main.e0ab1709.chunk.css",
+    "main.js": "/shihTzuYeda/static/js/main.57639378.chunk.js",
+    "main.js.map": "/shihTzuYeda/static/js/main.57639378.chunk.js.map",
     "runtime-main.js": "/shihTzuYeda/static/js/runtime-main.864315b0.js",
     "runtime-main.js.map": "/shihTzuYeda/static/js/runtime-main.864315b0.js.map",
     "static/css/2.8730d5d4.chunk.css": "/shihTzuYeda/static/css/2.8730d5d4.chunk.css",
-    "static/js/2.7bc6c7b4.chunk.js": "/shihTzuYeda/static/js/2.7bc6c7b4.chunk.js",
-    "static/js/2.7bc6c7b4.chunk.js.map": "/shihTzuYeda/static/js/2.7bc6c7b4.chunk.js.map",
+    "static/js/2.1fa8d584.chunk.js": "/shihTzuYeda/static/js/2.1fa8d584.chunk.js",
+    "static/js/2.1fa8d584.chunk.js.map": "/shihTzuYeda/static/js/2.1fa8d584.chunk.js.map",
     "index.html": "/shihTzuYeda/index.html",
-    "precache-manifest.f9c6faf1d0983fd94bdf93f9b8a3e901.js": "/shihTzuYeda/precache-manifest.f9c6faf1d0983fd94bdf93f9b8a3e901.js",
+    "precache-manifest.14c211f95b6aea49dda8b53192c29769.js": "/shihTzuYeda/precache-manifest.14c211f95b6aea49dda8b53192c29769.js",
     "service-worker.js": "/shihTzuYeda/service-worker.js",
     "static/css/2.8730d5d4.chunk.css.map": "/shihTzuYeda/static/css/2.8730d5d4.chunk.css.map",
-    "static/css/main.92fc52e5.chunk.css.map": "/shihTzuYeda/static/css/main.92fc52e5.chunk.css.map",
-    "static/js/2.7bc6c7b4.chunk.js.LICENSE.txt": "/shihTzuYeda/static/js/2.7bc6c7b4.chunk.js.LICENSE.txt",
+    "static/css/main.e0ab1709.chunk.css.map": "/shihTzuYeda/static/css/main.e0ab1709.chunk.css.map",
+    "static/js/2.1fa8d584.chunk.js.LICENSE.txt": "/shihTzuYeda/static/js/2.1fa8d584.chunk.js.LICENSE.txt",
     "static/media/app-logo.png": "/shihTzuYeda/static/media/app-logo.5ba31aad.png",
     "static/media/shih-tzu-1.jpg": "/shihTzuYeda/static/media/shih-tzu-1.7cecbc8c.jpg",
     "static/media/shih-tzu-10.jpg": "/shihTzuYeda/static/media/shih-tzu-10.687cfe8e.jpg",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.864315b0.js",
     "static/css/2.8730d5d4.chunk.css",
-    "static/js/2.7bc6c7b4.chunk.js",
-    "static/css/main.92fc52e5.chunk.css",
-    "static/js/main.8e7d093c.chunk.js"
+    "static/js/2.1fa8d584.chunk.js",
+    "static/css/main.e0ab1709.chunk.css",
+    "static/js/main.57639378.chunk.js"
   ]
 }
