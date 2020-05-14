@@ -1,8 +1,16 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom';
 
 import './feature-card.styles.scss';
 
-const FeatureCard = ({ icon, headerText, descText }) => {
+const FeatureCard = (props) => {
+    console.log(props);
+    const { icon, headerText, descText, route, history, match } = props;
+
+    const handleClick = () => {
+        history.push(`${match.path}/${route}`);
+    }
+
     return (
         <div className="feature-card">
             <div className="card-icon">
@@ -13,10 +21,10 @@ const FeatureCard = ({ icon, headerText, descText }) => {
                 <p>{descText}</p>
             </div>
             <div className="go-to-content">
-                <button>קרא עוד >></button>
+                <button onClick={handleClick}>קרא עוד >></button>
             </div>
         </div>
     );
 };
 
-export default FeatureCard;
+export default withRouter(FeatureCard);
