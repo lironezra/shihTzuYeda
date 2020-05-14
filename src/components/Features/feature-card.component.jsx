@@ -4,7 +4,6 @@ import { withRouter } from 'react-router-dom';
 import './feature-card.styles.scss';
 
 const FeatureCard = (props) => {
-    console.log(props);
     const { icon, headerText, descText, route, history, match } = props;
 
     const handleClick = () => {
