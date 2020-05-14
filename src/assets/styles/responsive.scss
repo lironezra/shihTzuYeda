@@ -1,0 +1,120 @@
+/*
+@File: Pluck Template Styles
+
+* This file contains the styling for the actual tepmlate, this
+is the file you need to edit to change the look of the
+tepmlate.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+** - Header
+** - SlideShowBanner
+** - Features
+
+
+
+*/
+
+
+@media only screen and (max-width: 767px) {
+    /*================================================
+    Default CSS
+    =================================================*/
+    p {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    /*================================================
+    Header CSS
+    =================================================*/
+    // .header-container {
+
+    //     .side-menu-button {
+    //         display: block;
+    //     }
+
+    //     .botom-wrapper {
+    //         display: none;
+    //     }
+    // }
+
+    /*================================================
+    SlideShowBanner CSS
+    =================================================*/
+    .section-slide-show {     
+        
+        .banner-wrapper {
+            
+            height: 200px !important;
+    
+            img {
+                height: 130px !important;
+                left: 10% !important;
+            }
+
+            h1 {
+                padding-left: 90px;
+            }
+    
+            .center {
+                top: 40% !important;
+                // left: 0% !important;
+                h1 {
+                    font-size: 20px !important;
+                    line-height: 30px !important;
+                }
+            }
+        }
+    }
+    
+    /*================================================
+    AboutUs CSS
+    =================================================*/
+    // .about-the-team-section {
+    //     padding: 60px 45px;
+    // }
+    .about-us-page-container {
+
+        .about-the-team-section {
+            padding: 50px 35px;
+        }
+    }
+
+    .allowed-prohibited-foods-page-container {
+        background-color: #f7f7f7;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1650px) {
+
+}
+
+// queries for laptops size
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .section-features {
+
+        .features-header {
+            padding: 0 150px;
+        }
+    }
+}
