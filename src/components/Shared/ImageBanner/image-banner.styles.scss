@@ -1,9 +1,16 @@
 .image-banner-wrapper {
     width: 100%;
     height: 500px;
-    // background-image: url('../../../assets/images/shihtzu-running.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: fixed;    
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .image-banner-wrapper {
+        min-height: 70vh;
+        background-attachment: unset;
+    }
 }

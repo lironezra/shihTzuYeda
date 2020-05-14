@@ -2,7 +2,7 @@
     position: fixed;
     cursor: pointer;
     bottom: 35px;
-    right: 35px;
+    left: 35px;
     font-size: 25px;
     color: #ffffff;
     background-color: #2d2d2d;
@@ -15,10 +15,10 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
 
-    &:hover {
-        color: #ffffff;
-        background: #8FD3E8;
-    }
+    // &:hover {
+    //     color: #ffffff;
+    //     background: #8FD3E8;
+    // }
 
     img {
         height: 22px;

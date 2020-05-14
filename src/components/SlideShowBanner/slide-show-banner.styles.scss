@@ -5,6 +5,7 @@
         position: relative;
         height: 530px;
         width: 100%;
+        margin: 0 auto;
 
         img {
             position: absolute;
@@ -12,7 +13,7 @@
             width: auto;
             margin: 0;
             top: 50%;   
-            left: 2%;
+            left: 10%;
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
@@ -39,11 +40,5 @@
         width: 100%;
         background: red;
     }
-
-
-        
-    
-    
-
 }
 

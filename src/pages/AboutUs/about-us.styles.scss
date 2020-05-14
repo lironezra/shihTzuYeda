@@ -1,6 +1,6 @@
 
 .about-the-team-section, .team-managers-section {
-    padding: 60px 70px;
+    padding: 50px 70px;
 }
 
 .team-managers-section {
@@ -16,8 +16,8 @@
         margin-bottom: 30px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 }
-
 
