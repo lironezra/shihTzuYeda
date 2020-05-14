@@ -15,7 +15,7 @@ const TEAM_MANAGERS = [
 
 const AboutUsPage = () => {
     return (
-        <>
+        <div className="about-us-page-container">
             <ImageBanner image={ShihtzuBannerPhoto} />
             <section className="about-the-team-section">
                 <h1>קצת על הקבוצה שלנו...</h1>
@@ -48,7 +48,7 @@ const AboutUsPage = () => {
                     }
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 
