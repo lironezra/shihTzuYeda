@@ -1,14 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import AppLogo from '../../assets/images/app-logo.png';
 import UserLogo from '../../assets/icons/user.png';
+import DrawerToggleButton from '../SideDrawer/drawer-toggle-button.component';
 
 import './header.styles.scss';
 
-const Header = () => {
+const Header = ({ drawerClickHandler }) => {
+
     return (
         <header className="header-container">
+            <div className='side-menu-button'>
+                <DrawerToggleButton click={drawerClickHandler}/>
+            </div>
             <div className="login-user-link">
                 <img src={UserLogo} alt="user" />
                 <span>כניסה</span>
@@ -22,22 +27,22 @@ const Header = () => {
                     <div className="nav-content">
                         <ul>
                             <li>
-                                <Link to="/" className="home-link">בית</Link>
+                                <NavLink to="/shihTzuYeda" activeClassName='is-active'>בית</NavLink>
                             </li>
                             <li>
-                                <Link to="/about-us" className="about-us-link">קצת עלינו</Link>
+                                <NavLink to="/about-us" activeClassName='is-active'>קצת עלינו</NavLink>
                             </li>
                             <li className="dropdown">
-                                <Link to="/recomendations">המלצות</Link>
-                                {/* <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">המלצות</a> */}
-                                {/* <button class="dropbtn">Dropdown</button> */}
+                                <NavLink to="/recomendations" activeClassName='is-active'>ההמלצות שלנו</NavLink>
                                 <div className="dropdown-content">
                                     <a className="link" href="https://www.w3schools.com/howto/howto_css_dropdown.asp">ספרים מומלצים</a>
                                     <a className="link" href="https://www.w3schools.com/howto/howto_css_dropdown.asp">מוצרי טיפוח</a>
                                     <a className="link" href="https://www.w3schools.com/howto/howto_css_dropdown.asp">אוכל מומלץ</a>
                                 </div>
                             </li>
-                            <li>אוכל</li>
+                            <li>
+                                <NavLink to="/food" activeClassName='is-active'>אוכל</NavLink>
+                            </li>
                         </ul>
                     </div>
                 </nav>
