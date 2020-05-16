@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8018e0a4f41f1393dc26ed0a1382851c",
+    "revision": "0f362cd8cbbb92773769b1f27d129f6d",
     "url": "/shihTzuYeda/index.html"
   },
   {
-    "revision": "4419e20aba6037cbce5e",
+    "revision": "f7942160fc9b4959a0ae",
     "url": "/shihTzuYeda/static/css/2.8730d5d4.chunk.css"
   },
   {
-    "revision": "543a4c6007f5c2179e23",
-    "url": "/shihTzuYeda/static/css/main.819cfafd.chunk.css"
+    "revision": "a5628fc2e257cfc4c8e4",
+    "url": "/shihTzuYeda/static/css/main.721af8a8.chunk.css"
   },
   {
-    "revision": "4419e20aba6037cbce5e",
-    "url": "/shihTzuYeda/static/js/2.c28ca2b3.chunk.js"
+    "revision": "f7942160fc9b4959a0ae",
+    "url": "/shihTzuYeda/static/js/2.b88ac3b4.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/shihTzuYeda/static/js/2.c28ca2b3.chunk.js.LICENSE.txt"
+    "url": "/shihTzuYeda/static/js/2.b88ac3b4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "543a4c6007f5c2179e23",
-    "url": "/shihTzuYeda/static/js/main.2c108bc2.chunk.js"
+    "revision": "a5628fc2e257cfc4c8e4",
+    "url": "/shihTzuYeda/static/js/main.1b7689e9.chunk.js"
   },
   {
     "revision": "9b3384aa561cd079ae75",
@@ -34,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db4b49f0c2c96d0a8eb437ecff1314a1",
     "url": "/shihTzuYeda/static/media/food1.db4b49f0.jpg"
+  },
+  {
+    "revision": "2aa0690d08746c4e5739e09e74dbe297",
+    "url": "/shihTzuYeda/static/media/mango.2aa0690d.jpg"
+  },
+  {
+    "revision": "acdd2a6300834fb2c1d02d31c576637a",
+    "url": "/shihTzuYeda/static/media/meat.acdd2a63.jpg"
   },
   {
     "revision": "7cecbc8c456be84941f41bd42d237653",
