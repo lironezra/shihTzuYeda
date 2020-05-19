@@ -5,7 +5,6 @@ import Card from "../../components/Card/card.component";
 import userLogo from "../../assets/icons/user-profile-icon-6.jpg";
 
 import "./about-us.styles.scss";
-import ShihtzuBannerPhoto from "../../assets/images/shihtzu-running.jpg";
 
 const TEAM_MANAGERS = [
   { fullName: "מירי וויזנברג", jobTitle: "מנהלת הקבוצה" },
@@ -13,10 +12,13 @@ const TEAM_MANAGERS = [
   { fullName: "אירנה מקרנקו", jobTitle: "סגנית מנהלת" },
 ];
 
+const ShihtzuBannerPhotoURL =
+  "https://firebasestorage.googleapis.com/v0/b/shih-tzu-yeda.appspot.com/o/shihtzu-running.jpg?alt=media&token=661aea5e-c983-4b28-9124-cb9e4112e035";
+
 const AboutUsPage = () => {
   return (
     <div className="about-us-page-container">
-      <ImageBanner image={ShihtzuBannerPhoto} />
+      <ImageBanner image={ShihtzuBannerPhotoURL} />
       <section className="about-the-team-section">
         <h1>קצת על הקבוצה שלנו...</h1>
         <p>
