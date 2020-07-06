@@ -13,7 +13,7 @@ const TEAM_MANAGERS = [
 ];
 
 const ShihtzuBannerPhotoURL =
-  "https://firebasestorage.googleapis.com/v0/b/shih-tzu-yeda.appspot.com/o/shihtzu-running.jpg?alt=media&token=661aea5e-c983-4b28-9124-cb9e4112e035";
+  "https://res.cloudinary.com/dwylnsnmk/image/upload/q_auto/v1590235714/shih-tzu-yeda/BannerImages/shihtzu-running_f87eqx.jpg";
 
 const AboutUsPage = () => {
   return (
