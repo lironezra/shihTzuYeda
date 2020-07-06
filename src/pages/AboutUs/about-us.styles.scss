@@ -1,23 +1,22 @@
-
-.about-the-team-section, .team-managers-section {
-    padding: 50px 70px;
+.about-the-team-section,
+.team-managers-section {
+  padding: 50px 70px;
 }
 
 .team-managers-section {
-    background-color: rgba(247, 247, 247, 1);
+  background-color: rgba(247, 247, 247, 1);
 
-    h1 {
-        margin-bottom: 40px;
-    }
+  h1 {
+    margin-bottom: 40px;
+  }
 
-    .manager-cards {
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+  .manager-cards {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
-

@@ -1,26 +1,23 @@
 .allowed-prohibited-foods-page-container {
-    width: 100%;
-    padding: 30px 70px;
+  width: 100%;
+  padding: 30px 70px;
 
-    .section-header {
+  .collection-items-container {
+    /* Grid styles */
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+}
 
-        h1 {
-            color: #2D2D2D;
-            margin-bottom: 40px;
-        }
-    }
+@media only screen and (max-width: 767px) {
+  .allowed-prohibited-foods-page-container {
+    background-color: #f7f7f7;
+    padding: 30px 10px !important;
 
     .collection-items-container {
-        /* Grid styles */
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-        div {
-            border: 1px solid black;
-            height: 200px;
-            width: 200px;
-            margin: 0 auto;
-        }
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     }
+  }
 }

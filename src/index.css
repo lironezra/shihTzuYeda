@@ -1,36 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
-
-/* @font-face {
-  font-family: 'Gan';
-  font-style: normal;
-  font-weight: 400;
-  src: 
-      local('Gan'), local('Gan'),
-      url('./assets/fonts/ganclm_bold-webfont.ttf') format('ttf')
-      url('./assets/fonts/ganclm_bold-webfont.woff') format('woff')
-} */
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 15px;
   direction: rtl;
 }
 
 section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
 }
 
 a {
@@ -39,32 +25,53 @@ a {
   color: #2d2d2d;
   outline: 0;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
-  color: #8FD3E8;
+  color: #8fd3e8;
 }
 
 .is-active {
-  color: #8FD3E8;
+  color: #8fd3e8;
 }
 
 h1 {
-  color: #8FD3E8;
+  color: #8fd3e8;
   margin-bottom: 15px;
   font-size: 33px;
 }
 
- .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6 {
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000000;
   margin-bottom: 15px;
 }
 
-.h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child, h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+.h1:last-child,
+.h2:last-child,
+.h3:last-child,
+.h4:last-child,
+.h5:last-child,
+.h6:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
   margin-bottom: 0;
 }
 
@@ -85,7 +92,7 @@ button {
   padding: 8px 30px;
   font-size: 13px;
   color: white;
-  background: #8FD3E8;
+  background: #8fd3e8;
   cursor: pointer;
   transition: 0.5s;
   -webkit-transition: 0.5s;
