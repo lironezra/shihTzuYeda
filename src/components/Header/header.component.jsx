@@ -18,7 +18,7 @@ const Header = ({ drawerClickHandler }) => {
       </div>
       <div className="top-wrapper">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/shih-tzu-yeda.appspot.com/o/app-logo.png?alt=media&token=6ea728e1-dd3f-4a8a-b6f5-04bc52d9f647"
+          src="https://res.cloudinary.com/dwylnsnmk/image/upload/q_auto/v1589973927/shih-tzu-yeda/app-logo_wx5n43.png"
           alt="app-logo"
         />
         <h1>שיצוידע - לאוהבי הגזע - האתר הרשמי</h1>
@@ -35,6 +35,11 @@ const Header = ({ drawerClickHandler }) => {
               <li>
                 <NavLink to="/about-us" activeClassName="is-active">
                   קצת עלינו
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/team-events" activeClassName="is-active">
+                  אירועים
                 </NavLink>
               </li>
               <li className="dropdown">
@@ -62,11 +67,11 @@ const Header = ({ drawerClickHandler }) => {
                   </a>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/food" activeClassName="is-active">
                   אוכל
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
