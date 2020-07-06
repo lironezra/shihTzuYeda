@@ -1,0 +1,124 @@
+.events-page-container {
+  width: 100%;
+  padding: 30px 70px;
+
+  //   .header {
+  //     padding: 10px 0;
+
+  //     h2 {
+  //       margin: 0;
+  //     }
+  //   }
+
+  .event-card-container {
+    // position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // width: 600px;
+    width: 70%;
+
+    height: 120px;
+    padding: 0px;
+    margin: auto auto 20px auto;
+    box-shadow: 0px 0px 5px #2d2d2d;
+    .ev-card-left {
+      width: 22%;
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      // float: left;
+      //   display: inline-block;
+      //   background-color: #ffbf47;
+
+      background-color: #ffc861;
+
+      text-align: center;
+
+      .day,
+      .month {
+        color: white;
+        display: block;
+        font-weight: 700;
+      }
+
+      .day {
+        // font-size: 80px;
+        display: block;
+        font-size: 56pt;
+        // font-weight: 100;
+        line-height: 1;
+      }
+
+      .month {
+        font-size: 30px;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    .ev-card-middle {
+      width: 30%;
+      height: 100%;
+
+      .ev-image {
+        width: auto;
+        float: right;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      //   background-color: black;
+    }
+
+    .ev-card-rigth {
+      width: 48%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2,
+      p {
+        margin: 0;
+      }
+      //   background-color: green;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .events-page-container {
+    background-color: #f7f7f7;
+    padding: 30px 20px;
+
+    .event-card-container {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+
+      .ev-card-left,
+      .ev-card-middle,
+      .ev-card-rigth {
+        width: 100%;
+      }
+
+      .ev-card-left {
+        height: 25%;
+        padding: 5px;
+      }
+      .ev-card-middle {
+        height: 50%;
+
+        .ev-image {
+          width: 100%;
+        }
+      }
+      .ev-card-rigth {
+        height: 25%;
+        padding: 5px;
+      }
+    }
+  }
+}
