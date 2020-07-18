@@ -25,6 +25,7 @@ const LoginSchema = Yup.object().shape({
 const Login = () => {
   return (
     <div className='loagin-page-wrapper'>
+      <Link to='/shihTzuYeda' className='dialog-back-home-wrapper' />
       <div className='login-form-container'>
         <div className='form-header'>
           <h2>ברוכים הבאים!</h2>

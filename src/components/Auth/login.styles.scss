@@ -1,4 +1,5 @@
 .loagin-page-wrapper {
+  position: relative;
   height: 100vh;
   padding-top: 150px;
   padding-bottom: 150px;
@@ -8,6 +9,21 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  .dialog-back-home-wrapper {
+    background: url('../../assets/icons/close.png');
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    line-height: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50px;
+  }
 
   .register-form-container {
     margin: -130px 90px auto;
@@ -35,6 +51,11 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
 
       h2 {
         margin: 0;

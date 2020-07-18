@@ -31,6 +31,8 @@ const RegisterSchema = Yup.object().shape({
 const Register = () => {
   return (
     <div className='loagin-page-wrapper'>
+      <Link to='/shihTzuYeda' className='dialog-back-home-wrapper' />
+
       <div className='register-form-container'>
         <div className='form-header'>
           <h2>ברוכים הבאים!</h2>
