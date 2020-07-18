@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import UserLogo from '../../assets/icons/user.png';
 import DrawerToggleButton from '../SideDrawer/drawer-toggle-button.component';
 
@@ -14,7 +14,7 @@ const Header = ({ drawerClickHandler }) => {
       </div>
       <Link to='/signin' className='login-user-link'>
         <img src={UserLogo} alt='user' />
-        כניסה
+        <span>כניסה</span>
       </Link>
       <div className='top-wrapper'>
         <img
@@ -37,41 +37,25 @@ const Header = ({ drawerClickHandler }) => {
                   קצת עלינו
                 </NavLink>
               </li>
-              <li>
-                <NavLink to='/team-events' activeClassName='is-active'>
-                  אירועים
-                </NavLink>
-              </li>
               <li className='dropdown'>
-                <NavLink to='/recomendations' activeClassName='is-active'>
-                  ההמלצות שלנו
-                </NavLink>
+                <AnchorLink href='#features'>קטגוריות</AnchorLink>
                 <div className='dropdown-content'>
-                  <a
-                    className='link'
-                    href='https://www.w3schools.com/howto/howto_css_dropdown.asp'
-                  >
-                    ספרים מומלצים
-                  </a>
-                  <a
-                    className='link'
-                    href='https://www.w3schools.com/howto/howto_css_dropdown.asp'
-                  >
-                    מוצרי טיפוח
-                  </a>
-                  <a
-                    className='link'
-                    href='https://www.w3schools.com/howto/howto_css_dropdown.asp'
-                  >
-                    אוכל מומלץ
-                  </a>
+                  <Link to='/grooming' className='link'>
+                    טיפוח שיצו
+                  </Link>
+                  <Link to='/food' className='link'>
+                    מזון שיצו
+                  </Link>
+                  <Link to='/test' className='link'>
+                    השוואות ביטוחים
+                  </Link>
                 </div>
               </li>
-              {/* <li>
-                <NavLink to="/food" activeClassName="is-active">
-                  אוכל
+              <li>
+                <NavLink to='/team-events' activeClassName='is-active'>
+                  אירועי הקבוצה
                 </NavLink>
-              </li> */}
+              </li>
             </ul>
           </div>
         </nav>
