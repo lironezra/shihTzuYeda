@@ -1,0 +1,96 @@
+.loagin-page-wrapper {
+  height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: url('https://res.cloudinary.com/dwylnsnmk/image/upload/q_auto/v1594126583/shih-tzu-yeda/BannerImages/shihtzu-signin-background_r2osjj.jpg')
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .register-form-container {
+    margin: -130px 90px auto;
+    padding: 12px;
+  }
+
+  .login-form-container {
+    padding: 12px;
+    margin: 0 90px auto;
+  }
+
+  .register-form-container,
+  .login-form-container {
+    display: block;
+    max-width: 450px;
+    // margin: 0 90px auto;
+    background: white;
+    opacity: 0.92;
+    // min-height: 335px;
+    min-height: 280px;
+
+    .form-header {
+      height: 21%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        margin: 0;
+        color: black;
+        font-size: 2rem;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    form {
+      padding: 10px;
+      height: 70%;
+
+      .form-group {
+        label {
+          display: block;
+          font-weight: 700;
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+          text-align: start;
+        }
+
+        input {
+          width: 100%;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          height: calc(1.5em + 0.75rem + 2px);
+          padding: 0.375rem 0.75rem;
+        }
+
+        .form-error {
+          color: red;
+        }
+      }
+
+      p {
+        a {
+          float: right;
+          cursor: pointer;
+          transition: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .loagin-page-wrapper {
+    .register-form-container,
+    .login-form-container {
+      margin: -130px 28px auto;
+    }
+  }
+}
