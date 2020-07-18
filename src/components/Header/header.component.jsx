@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import UserLogo from '../../assets/icons/user.png';
