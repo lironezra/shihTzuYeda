@@ -36,40 +36,44 @@ const Login = () => {
           validationSchema={LoginSchema}
           onSubmit={onSubmit}
         >
-          <Form>
-            <div className='form-group'>
-              <label htmlFor='email'>אימייל</label>
-              <Field
-                type='text'
-                id='email'
-                name='email'
-                placeholder='כתובת אימייל'
-              />
-              <ErrorMessage
-                name='email'
-                render={(msg) => <FormError text={msg} />}
-              />
-            </div>
-            <div className='form-group'>
-              <label htmlFor='password'>סיסמה</label>
-              <Field
-                type='password'
-                id='password'
-                name='password'
-                placeholder='סיסמה'
-              />
-              <ErrorMessage
-                name='password'
-                render={(msg) => <FormError text={msg} />}
-              />
-            </div>
+          {({ touched }) => (
+            <Form>
+              <div className='form-group'>
+                <label htmlFor='email'>אימייל</label>
+                <Field
+                  type='text'
+                  id='email'
+                  name='email'
+                  placeholder='כתובת אימייל'
+                />
+                {touched.email && (
+                  <ErrorMessage
+                    name='email'
+                    render={(msg) => <FormError text={msg} />}
+                  />
+                )}
+              </div>
+              <div className='form-group'>
+                <label htmlFor='password'>סיסמה</label>
+                <Field
+                  type='password'
+                  id='password'
+                  name='password'
+                  placeholder='סיסמה'
+                />
+                {touched.password && (
+                  <ErrorMessage
+                    name='password'
+                    render={(msg) => <FormError text={msg} />}
+                  />
+                )}
+              </div>
 
-            <button type='submit'>התחבר</button>
-          </Form>
+              <button type='submit'>התחבר</button>
+            </Form>
+          )}
         </Formik>
-        <p>
-          <Link to='/signup'>משתמש חדש? צור חשבון</Link>
-        </p>
+        <Link to='/signup'>משתמש חדש? צור חשבון</Link>
       </div>
     </div>
   );
